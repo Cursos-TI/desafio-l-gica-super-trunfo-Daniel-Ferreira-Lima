@@ -126,12 +126,12 @@ printf("5. Densidade demográfica\n");
 printf("Sua escolha: ");
 scanf("%d", &escolha);
 
-switch (escolha){
+switch (escolha){      //Criando o switch para verificar os números e opções escolhidas//
     case 1: 
     printf("Comparação escolhida: População!\n");
     printf("População da carta 1: %lu\n", populacao);
     printf("População da carta 2: %lu\n", populacao2);
-    if (populacao > populacao2) {
+    if (populacao > populacao2) {      //criando a logica para o resultado das comparações//
         printf("Resultado final: Carta 1 venceu!");
 
     }
@@ -145,7 +145,7 @@ switch (escolha){
 
     case 2: 
     printf("Comparação escolhida: Área!\n");
-    printf("Área da carta 1: %.2f\n", area);
+    printf("Área da carta 1: %.2f\n", area); //Exibição dos dados das cartas para o usuário//
     printf("Área da carta 2: %.2f\n", area2);
     if (area > area2) {
         printf("Resultado final: Carta 1 venceu!");
@@ -155,7 +155,7 @@ switch (escolha){
         printf("Resultado final: Carta 2 venceu!");
     }
     else {
-        printf("Resultado final: Empate!");
+        printf("Resultado final: Empate!");   //Criando o terceiro resultado possivel: Empate//
     }
     break;
     case 3: 
@@ -205,6 +205,5 @@ switch (escolha){
     break;
 
 }
-
 return 0;
 } 
