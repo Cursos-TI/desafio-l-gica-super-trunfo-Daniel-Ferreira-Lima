@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#include <stdio.h>
-
 // Desafio Super Trunfo - Países //
 
 int main() {
@@ -44,7 +42,7 @@ printf("Cidade: ");
 scanf("%s", Cidade);
 
 printf("População: ");
-scanf("%d", &populacao);
+scanf("%lu", &populacao);
 
 printf("Área em KM²: ");
 scanf("%f", &area);
@@ -67,7 +65,7 @@ printf("\nCarta 1:\n");
 printf("Estado: %c\n", Estado);
 printf("Codigo: %s\n", Codigo);
 printf("Cidade: %s\n", Cidade);
-printf("Populacao: %d\n", populacao);
+printf("Populacao: %lu\n", populacao);
 printf("Área: %.2f km²\n", area);
 printf("PIB: %.2f bilhões de reais\n", pib);
 printf("Número de pontos turisticos: %d\n", NPT);
@@ -87,7 +85,7 @@ printf("Cidade: ");
 scanf("%s", Cidade2);
 
 printf("População: ");
-scanf("%d", &populacao2);
+scanf("%lu", &populacao2);
 
 printf("Área em KM²: ");
 scanf("%f", &area2);
@@ -110,22 +108,103 @@ printf("\nCarta 2:\n");
 printf("Estado: %c\n", Estado2);
 printf("Codigo: %s\n", Codigo2);
 printf("Cidade: %s\n", Cidade2);
-printf("Populacao: %d\n", populacao2);
+printf("Populacao: %lu\n", populacao2);
 printf("Area: %.2f km²\n", area2);
 printf("PIB: %.2f bilhões de reais\n", pib2);
 printf("Número de pontos turisticos: %d\n", NPT2);
 printf("Densidade populacional: %.2f hab/km²\n", DP2);
 printf("PIB per capita: %.2f reais\n", pibpercapita2);
 
-//COMPARAÇÃO DAS CARTAS E DETERMINANDO QUEM GANHOU!//
+//COMPARAÇÃO DAS CARTAS//
+int escolha;
+printf("\n Hora do duelo! Escolha qual atributo deseja comparar:\n");
+printf("1. População\n");
+printf("2. Área\n");
+printf("3. PIB\n");
+printf("4. Número de pontos turísticos\n");
+printf("5. Densidade demográfica\n");
+printf("Sua escolha: ");
+scanf("%d", &escolha);
 
+switch (escolha){
+    case 1: 
+    printf("Comparação escolhida: População!\n");
+    printf("População da carta 1: %lu\n", populacao);
+    printf("População da carta 2: %lu\n", populacao2);
+    if (populacao > populacao2) {
+        printf("Resultado final: Carta 1 venceu!");
 
+    }
+    else if (populacao2 > populacao) {
+        printf("Resultado final: Carta 2 venceu!");
+    }
+    else {
+        printf("Resultado final: Empate!");
+    }
+    break;
 
-printf("COMPARAÇÃO DAS CARTAS: (Densidade Populacional)\n");
+    case 2: 
+    printf("Comparação escolhida: Área!\n");
+    printf("Área da carta 1: %.2f\n", area);
+    printf("Área da carta 2: %.2f\n", area2);
+    if (area > area2) {
+        printf("Resultado final: Carta 1 venceu!");
 
-if (DP < DP2) {
-    printf("RESULTADO: Carta 1 venceu!\n");}
-else {
-printf("RESULTADO: Carta 2 venceu!\n");}  
+    }
+    else if (area2 > area) {
+        printf("Resultado final: Carta 2 venceu!");
+    }
+    else {
+        printf("Resultado final: Empate!");
+    }
+    break;
+    case 3: 
+    printf("Comparação escolhida: PIB!\n");
+    printf("PIB da carta 1: %.2f\n", pib);
+    printf("PIB  da carta 2: %.2f\n", pib2);
+    if (pib > pib2) {
+        printf("Resultado final: Carta 1 venceu!");
+
+    }
+    else if (pib2 > pib) {
+        printf("Resultado final: Carta 2 venceu!");
+    }
+    else {
+        printf("Resultado final: Empate!");
+    }
+    break;
+    case 4: 
+    printf("Comparação escolhida: Número de pontos turísticos!\n");
+    printf("Número de pontos turísticos da carta 1: %d\n", NPT);
+    printf("Número de pontos turísticos da carta 2: %d\n", NPT2);
+    if (NPT > NPT2) {
+        printf("Resultado final: Carta 1 venceu!");
+
+    }
+    else if (NPT2 > NPT) {
+        printf("Resultado final: Carta 2 venceu!");
+    }
+    else {
+        printf("Resultado final: Empate!");
+    }
+    break;
+    case 5: 
+    printf("Comparação escolhida: Densidade demográfica!\n");
+    printf("Densidade demográfica da carta 1: %.2f\n", DP);
+    printf("Densidade demográfica da carta 2: %.2f\n", DP2);
+    if (DP > DP2) {
+        printf("Resultado final: Carta 1 venceu!");
+
+    }
+    else if (DP2 > DP) {
+        printf("Resultado final: Carta 2 venceu!");
+    }
+    else {
+        printf("Resultado final: Empate!");
+    }
+    break;
+
+}
+
 return 0;
 } 
