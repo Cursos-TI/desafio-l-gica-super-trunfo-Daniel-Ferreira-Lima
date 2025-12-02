@@ -160,10 +160,10 @@ switch(escolha){  //ESCOLHA DO USUÁRIO PARA O SEGUNDO ATRIBUTO//
      NPT > NPT2 ? printf("\n Números de pontos turísticos da carta 1 é maior!") : printf("\n Números de pontos turísticos da carta 2 é maior!");
      break;
      case 5:
-     resultado1 = populacao - DP;
-     resultado2 = populacao2 - DP2;
+     resultado1 = DP - populacao;
+     resultado2 = DP2 - populacao2;
      populacao > populacao2 ? printf("\n População da carta 1 é maior!") : printf("\n População da carta 2 é maior!");
-     DP2 < DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
+     DP > DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
      break;
     }
     break;
@@ -196,10 +196,10 @@ switch(escolha){  //ESCOLHA DO USUÁRIO PARA O SEGUNDO ATRIBUTO//
      NPT > NPT2 ? printf("\n Números de pontos turísticos da carta 1 é maior!") : printf("\n Números de pontos turísticos da carta 2 é maior!");
      break;
      case 5:
-     resultado1 = area - DP;
-     resultado2 = area2 - DP2;
+     resultado1 = DP - area;
+     resultado2 = DP2 - area2;
      area > area2 ? printf("\n Área da carta 1 é maior!") : printf("\n Área da carta 2 é maior!");
-     DP2 < DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
+     DP > DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
      break;
     }
     break;
@@ -235,7 +235,7 @@ switch(escolha){  //ESCOLHA DO USUÁRIO PARA O SEGUNDO ATRIBUTO//
      resultado1 = pib - DP;
      resultado2 = pib2 - DP2;
      pib > pib2 ? printf("\n PIB da carta 1 é maior!") : printf("\n PIB da carta 2 é maior!");
-     DP2 < DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
+     DP > DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
      break;
     }
     break;
@@ -268,10 +268,10 @@ switch(escolha){  //ESCOLHA DO USUÁRIO PARA O SEGUNDO ATRIBUTO//
      pib > pib2 ? printf("\n PIB da carta 1 é maior!") : printf("\n PIB da carta 2 é maior!");
      break;
      case 5:
-     resultado1 = DP - NPT;
-     resultado2 = DP2 - NPT2;
+     resultado1 = NPT - DP;
+     resultado2 = NPT2 - DP2;
      NPT > NPT2 ? printf("\n Números de pontos turísticos da carta 1 é maior!") : printf("\n Números de pontos turísticos da carta 2 é maior!");
-     DP2 < DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
+     DP > DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
      break;
     }
     break;
@@ -286,27 +286,27 @@ switch(escolha){  //ESCOLHA DO USUÁRIO PARA O SEGUNDO ATRIBUTO//
     switch (escolha2){
         
      case 2: 
-     resultado1 = populacao - DP;
-     resultado2 = populacao2 - DP2;
+     resultado1 = DP - populacao;
+     resultado2 = DP2 - populacao2;
      populacao > populacao2 ? printf("\n População da carta 1 é maior!") : printf("\n População da carta 2 é maior!");
-     DP2 < DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
+     DP > DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
      break;
      case 3:
-     resultado1 = area - DP;
-     resultado2 = area2 - DP2;
-     DP2 < DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
+     resultado1 = DP - area2;
+     resultado2 = DP2 - area2;
+     DP > DP2 ? printf("\n Densidade populacional da carta 1 é menor!") : printf("\n Densidade populacional da carta 2 é menor!");
      area > area2 ? printf("\n Área da carta 1 é maior!") : printf("\n Área da carta 2 é maior!");
      break;
      case 4: 
-     resultado1 = pib - DP;
-     resultado2 = pib2 - DP2;
-     DP2 < DP2 ? printf("\nDensidade populacional da carta 1 é menor!") : printf("\nDensidade populacional da carta 2 é menor!");
+     resultado1 = DP - pib;
+     resultado2 = DP2 - pib2;
+     DP > DP2 ? printf("\nDensidade populacional da carta 1 é menor!") : printf("\nDensidade populacional da carta 2 é menor!");
      pib > pib2 ? printf("\nPIB da carta 1 é maior!") : printf("\nPIB da carta 2 é maior");
      break;
      case 5:
-     resultado1 = DP - NPT;
-     resultado2 = DP2 - NPT2;
-     DP2 < DP2 ? printf("\nDensidade populacional da carta 1 é menor!") : printf("\nDensidade populacional da carta 2 é menor!");
+     resultado1 = NPT - DP;
+     resultado2 = NPT2 - DP2;
+     DP > DP2 ? printf("\nDensidade populacional da carta 1 é menor!") : printf("\nDensidade populacional da carta 2 é menor!");
      NPT > NPT2 ? printf("\nNúmero de pontos turísticos da carta 1 é maior!") : printf("\nNúmero de pontos turísticos da carta 2 é maior!");
      break;
     }
@@ -326,4 +326,3 @@ else {
 
 return 0;
 }
-
